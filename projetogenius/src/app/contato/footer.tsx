@@ -14,7 +14,7 @@ export function Rodaper() {
             />
           </div>
           <div className="space-y-2">
-            <p>Razão Social: LEANDRO DOS SANTOS SILVAbr</p>
+            <p>Razão Social: LEANDRO DOS SANTOS SILVA</p>
             <p>CNPJ: 34.113.816/0001-43</p>
           </div>
         </div>
