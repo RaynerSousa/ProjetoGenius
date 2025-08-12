@@ -1,6 +1,6 @@
 export default function Contato() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center p-8 lg:gap-30 xl:gap-70 2x1:gap-3000 text-white">
+    <div className="flex flex-col md:flex-row items-center justify-center p-8 lg:gap-30 xl:gap-70 2x1:gap-3000 text-white" id="contato">
       {/* Texto à esquerda */}
       <div className="text-3xl leading-relaxed text-center lg:text-4xl md:text-left">
         Vamos
