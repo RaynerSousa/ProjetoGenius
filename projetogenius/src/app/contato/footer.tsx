@@ -2,40 +2,58 @@ import Image from "next/image";
 export function Rodaper() {
   return (
     <div className="p-5 text-white bg-indigo-950">
-      <div>
-        <img src="genius_comp.png" alt="logo genius" width={80} height={80} />
-      </div>
-      <div className="grid col-end-2">
-        <h3>Formas de falar com a empressa:</h3>
-        <p>
-          WhatsApp:{" "}
-          <a
-            href="https://wa.me/558896178334"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-green-500 underline"
-          >
-            (88) 9617-8334
-          </a>
-        </p>
-        <p>
-          Email: {""}
-          <a href="mailto:leandroas2407@hotmail.com" className="text-blue-400">
-            leandroas2407@hotmail.com
-          </a>
-        </p>
-        <p>
-          Endereço:{" "}
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Avenida Duque de Caxias,+1291,+SALA
+      <div className="flex flex-col md:flex-row items-start gap-6">
+        {/* DIV ESQUERDA */}
+        <div>
+          <div className="shrink-0">
+            <Image
+              src="/genius_comp.png"
+              alt="logo genius"
+              width={180}
+              height={180}
+            />
+          </div>
+          <div className="space-y-2">
+            <p>Razão Social: LEANDRO DOS SANTOS SILVAbr</p>
+            <p>CNPJ: 34.113.816/0001-43</p>
+          </div>
+        </div>
+        {/* DIV DA DIRETA */}
+        <div className="space-y-4  mb-5 lg:p-10">
+          <h3>Formas de falar com a empressa:</h3>
+          <p>
+            WhatsApp:{" "}
+            <a
+              href="https://wa.me/558896178334"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-500 underline"
+            >
+              (88) 9617-8334
+            </a>
+          </p>
+          <p>
+            Email: {""}
+            <a
+              href="mailto:leandroas2407@hotmail.com"
+              className="text-blue-400"
+            >
+              leandroas2407@hotmail.com
+            </a>
+          </p>
+          <p>
+            Endereço:{" "}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Avenida Duque de Caxias,+1291,+SALA
           101,+Fazendinha,+Itapipoca,+CE"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 underline"
-          >
-            Avenida Duque de Caxias, 1291, SALA 101,Fazendinha,Itapipoca/CE
-          </a>
-        </p>
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 underline"
+            >
+              Avenida Duque de Caxias, 1291, SALA 101,Fazendinha,Itapipoca/CE
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );

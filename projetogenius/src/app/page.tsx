@@ -5,23 +5,25 @@ import { Rodaper } from "./contato/footer";
 import { WhatsAppButton } from "./contato/footer";
 import { Introdutorio } from "./Historia/introdução";
 
+
 export default function Home() {
   const links = [
-    { label: "Home", href: "/" },
+    { label: "Inicio", href: "/" },
     { label: "Sobre", href: "/" },
+    { label:"Serviços", href: "/"},
     { label: "Contato", href: "/" }, // <- Vai abrir a página /contato
   ];
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <NavBar links={links} />
       {/* Conteúdo da página */}
-      <main className="p-4 text-white">
+      <main className="flex-1 p-2 text-white">
         <Introdutorio />
         <Contato />
         <WhatsAppButton />
       </main>
-      <footer>
+      <footer className="text-left">
         <Rodaper />
       </footer>
     </div>
