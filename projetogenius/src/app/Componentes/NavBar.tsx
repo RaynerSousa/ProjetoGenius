@@ -18,7 +18,7 @@ export default function NavBar({ links }: NavBarProps) {
           </div>
 
           {/* Links */}
-          <div className="flex space-x-16">
+          <div className="flex space-x-12">
             {links.map((link, indice) => (
               <a
                 key={indice}
