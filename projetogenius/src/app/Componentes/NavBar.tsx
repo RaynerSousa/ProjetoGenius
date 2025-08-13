@@ -18,12 +18,12 @@ export default function NavBar({ links }: NavBarProps) {
           </div>
 
           {/* Links */}
-          <div className="flex space-x-24">
+          <div className="flex space-x-16">
             {links.map((link, indice) => (
               <a
                 key={indice}
                 href={link.href}
-                className=" text-lg font-medium f hover:text-indigo-600"
+                className=" text-lg font-medium hover:text-indigo-600"
               >
                 {link.label}
               </a>
