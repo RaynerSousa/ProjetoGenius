@@ -1,9 +1,9 @@
 "use client"
 
-export default function softwares (){
+export default function Softwares (){
     return(
         <div>
-            
+
         </div>
     )
 }
