@@ -12,7 +12,6 @@ export function Card({ title, description, img }: cardPorps) {
         p-6 rounded-xl 
         hover:shadow-md transition duration-300
         w-auto"
-      id="Softwares"
     >
       <div className="flex justify-center items-center">
         

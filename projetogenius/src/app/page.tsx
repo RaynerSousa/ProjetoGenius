@@ -1,6 +1,6 @@
 import Image from "next/image";
 import NavBar from "./Componentes/NavBar";
-import Contato from "./contato/pages";
+import Contato from "./linksNavbar/Contato";
 import { Rodaper } from "./contato/footer";
 import { WhatsAppButton } from "./contato/footer";
 import { Introdutorio } from "./linksNavbar/introdução";

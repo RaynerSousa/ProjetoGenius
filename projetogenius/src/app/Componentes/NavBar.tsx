@@ -8,7 +8,7 @@ interface NavBarProps {
 
 export default function NavBar({ links }: NavBarProps) {
   return (
-    <nav className="fixed w-full bg-amber-50 shadow-sm">
+    <nav className="fixed w-full bg-amber-50 shadow-sm ">
       <div className="lg:mx-15 mb:mx-20">
         <div className="flex sm:justify-between h-16 items-center">
           {/* Logo */}
@@ -23,7 +23,7 @@ export default function NavBar({ links }: NavBarProps) {
               <a
                 key={indice}
                 href={link.href}
-                className=" text-lg font-medium hover:text-indigo-600"
+                className="m-7 font-medium hover:text-indigo-600"
               >
                 {link.label}
               </a>
