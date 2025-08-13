@@ -21,32 +21,33 @@
 //   );
 // }
 
-
 import Image from "next/image";
 
 export function Introdutorio() {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-center p-8 gap-6 lg:gap-10 xl:gap-16 text-white mt-20" id="inicio">
-      
-      {/* TEXTO - vai pra esquerda em telas grandes, fica abaixo da imagem em mobile */}
-      <div className="w-full md:w-1/2">
-        <p>
-          Você está procurando um sistema de gestão e automação comercial? Se
-          sim, você está no lugar certo.
-        </p>
-      </div>
+    <div className="container" id="inicio">
+      <div
+        className="flex flex-col-reverse md:flex-row items-center justify-center p-8 gap-6 lg:gap-10 xl:gap-16 text-white mt-20"
+      >
+        {/* TEXTO - vai pra esquerda em telas grandes, fica abaixo da imagem em mobile */}
+        <div className="w-full md:w-1/2">
+          <p>
+            Você está procurando um sistema de gestão e automação comercial? Se
+            sim, você está no lugar certo.
+          </p>
+        </div>
 
-      {/* IMAGEM - vai pra direita em telas grandes, fica no topo em mobile */}
-      <div className="w-full md:w-1/2 flex justify-center">
-        <Image
-          src="/computadores.png"
-          alt="vários computadores"
-          width={500}
-          height={500}
-          className="w-full max-w-sm h-auto"
-        />
+        {/* IMAGEM - vai pra direita em telas grandes, fica no topo em mobile */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <Image
+            src="/computadores.png"
+            alt="vários computadores"
+            width={500}
+            height={500}
+            className="w-full max-w-sm h-auto"
+          />
+        </div>
       </div>
-
     </div>
   );
 }
