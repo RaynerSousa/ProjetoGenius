@@ -4,8 +4,7 @@ import Contato from "./contato/pages";
 import { Rodaper } from "./contato/footer";
 import { WhatsAppButton } from "./contato/footer";
 import { Introdutorio } from "./linksNavbar/introdução";
-import Softwares from "./linksNavbar/serviços";
-import { Card } from "./Componentes/Cards";
+import Softwares from "./linksNavbar/softwares";
 
 export default function Home() {
   const links = [
@@ -19,25 +18,9 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <NavBar links={links} />
       {/* Conteúdo da página */}
-      <main className="flex-1 p-2 pt-16 text-white">
+      <main className="flex-1 p-2 text-white">
         <Introdutorio />
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 m-5 pt-20 text-white">
-          <Card
-            title="Genius"
-            description="E um sistema que ajuda a automotizar comercios"
-            img="/genius.png"
-          />
-          <Card
-            title="Genius"
-            description="E um sistema que ajuda a automotizar comercios"
-            img="/genius.png"
-          />
-          <Card
-            title="Genius"
-            description="E um sistema que ajuda a automotizar comercios"
-            img="/genius.png"
-          />
-        </div>
+        <Softwares/>
         <Contato />
         <WhatsAppButton />
       </main>

@@ -26,7 +26,7 @@ import Image from "next/image";
 
 export function Introdutorio() {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-center p-8 gap-6 lg:gap-10 xl:gap-16 text-white mt-10" id="inicio">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-center p-8 gap-6 lg:gap-10 xl:gap-16 text-white mt-20" id="inicio">
       
       {/* TEXTO - vai pra esquerda em telas grandes, fica abaixo da imagem em mobile */}
       <div className="w-full md:w-1/2">
