@@ -9,7 +9,7 @@ interface NavBarProps {
 export default function NavBar({ links }: NavBarProps) {
   return (
     <nav className="fixed w-full bg-amber-50 shadow-sm ">
-      <div className="lg:mx-15 mb:mx-20">
+      <div>
         <div className="flex sm:justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
