@@ -27,7 +27,7 @@ export function Introdutorio() {
   return (
     <div className="container pt-20" id="inicio">
       <div
-        className="flex xl:flex-row-reverse md:flex-row-reverse sm:flex-col justify-center lg:gap-10 xl:gap-16 text-white mt-20 lg:m-25 md:m-12 sm:m-7"
+        className="flex xl:flex-row-reverse md:flex-row-reverse sm:flex-col flex-col justify-center lg:gap-10 xl:gap-16 text-white mt-20 lg:m-25 md:m-12 sm:m-7"
       >
         {/* IMAGEM - vai pra direita em telas grandes, fica no topo em mobile */}
         <div className="w-full md:w-1/2 flex justify-center">
