@@ -5,11 +5,12 @@ import { Rodaper } from "./contato/footer";
 import { WhatsAppButton } from "./contato/footer";
 import { Introdutorio } from "./linksNavbar/introdução";
 import Softwares from "./linksNavbar/softwares";
+import { Sobre } from "./linksNavbar/sobre";
 
 export default function Home() {
   const links = [
     { label: "Inicio", href: "#inicio" },
-    { label: "Sobre", href: "/" },
+    { label: "Sobre", href: "#sobre" },
     { label: "Softwares", href: "#Softwares" },
     { label: "Contato", href: "#contato" }, // <- Vai abrir a página /contato
   ];
@@ -20,7 +21,8 @@ export default function Home() {
       {/* Conteúdo da página */}
       <main className="flex-1 p-2 text-white">
         <Introdutorio />
-        <Softwares/>
+        <Sobre />
+        <Softwares />
         <Contato />
         <WhatsAppButton />
       </main>

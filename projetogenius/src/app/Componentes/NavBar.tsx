@@ -13,7 +13,7 @@ export default function NavBar({ links }: NavBarProps) {
         <div className="flex sm:justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Image src="/genius.png" alt="logo genius" width={80} height={80} />
+            <Image src="/genius.png" alt="logo genius" width={80} height={60} />
             <span className="hidden sm:inline text-lg">Genius</span>
           </div>
 

@@ -10,7 +10,7 @@ export function Rodaper() {
               src="/genius_comp.png"
               alt="logo genius"
               width={180}
-              height={180}
+              height={60}
             />
           </div>
           <div className="space-y-2">
