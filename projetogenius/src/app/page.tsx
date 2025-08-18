@@ -16,7 +16,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       <NavBar links={links} />
       {/* Conteúdo da página */}
       <main className="flex-1 p-2 text-white">

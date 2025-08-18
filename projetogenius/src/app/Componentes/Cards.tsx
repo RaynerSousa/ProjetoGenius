@@ -13,7 +13,7 @@ export function Card({ title, description, img }: cardPorps) {
         hover:shadow-md transition duration-300
         w-auto"
     >
-      <div className="flex justify-center items-center">
+      <div className="flex md:flex-row sm:flex-row  flex-col justify-center items-center">
         
           <img
             src={img}

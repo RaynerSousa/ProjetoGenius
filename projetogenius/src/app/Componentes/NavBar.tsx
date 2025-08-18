@@ -10,20 +10,20 @@ export default function NavBar({ links }: NavBarProps) {
   return (
     <nav className="fixed w-full bg-amber-50 shadow-sm ">
       <div>
-        <div className="flex sm:justify-between h-16 items-center">
+        <div className="flex sm:justify-between justify-center h-16 items-center">
           {/* Logo */}
-          <div className="flex items-center">
-            <Image src="/genius.png" alt="logo genius" width={80} height={60} />
+          <div className="flex  items-center">
+            <Image src="/genius.png" alt="logo genius" width={70} height={50} />
             <span className="hidden sm:inline text-lg">Genius</span>
           </div>
 
-          {/* Links */}
-          <div className="flex space-x-12">
+          {/* LINKS */}
+          <div className="flex">
             {links.map((link, indice) => (
               <a
                 key={indice}
                 href={link.href}
-                className="m-7 font-medium hover:text-indigo-600"
+                className="md:m-10 sm:m-7 m-2 hover:text-indigo-600"
               >
                 {link.label}
               </a>
