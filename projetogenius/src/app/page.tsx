@@ -6,13 +6,14 @@ import { WhatsAppButton } from "./contato/footer";
 import { Introdutorio } from "./linksNavbar/introdução";
 import Softwares from "./linksNavbar/softwares";
 import { Sobre } from "./linksNavbar/sobre";
+import { InfiniteScrollHorizontal } from "./linksNavbar/InfinitScroll";
 
 export default function Home() {
   const links = [
     { label: "Inicio", href: "#inicio" },
     { label: "Sobre", href: "#sobre" },
     { label: "Softwares", href: "#Softwares" },
-    { label: "Contato", href: "#contato" }, // <- Vai abrir a página /contato
+    { label: "Contato", href: "#contato" },
   ];
 
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <main className="flex-1 p-2 text-white">
         <Introdutorio />
         <Sobre />
+        <InfiniteScrollHorizontal />
         <Softwares />
         <Contato />
         <WhatsAppButton />
