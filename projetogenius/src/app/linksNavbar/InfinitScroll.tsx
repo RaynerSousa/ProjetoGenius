@@ -11,18 +11,18 @@ const img = [
 
 export function InfiniteScrollHorizontal() {
   return (
-    <div className="wrapper">
+    <div className="wrapper mt-30">
       <div className="img-item" style={{ "--i": 1 } as React.CSSProperties}>
-        <img src="/computadores.png" alt="" />
+        <img src="/verificacao.jpg  " alt="" />
       </div>
       <div className="img-item" style={{ "--i": 2 } as React.CSSProperties}>
-        <img src="/genius_comp.png" alt="" />
+        <img src="/verificacao.jpg" alt="" />
       </div>
       <div className="img-item" style={{ "--i": 3 } as React.CSSProperties}>
         <img src="/verificacao.jpg" alt="" />
       </div>
       <div className="img-item" style={{ "--i": 4 } as React.CSSProperties}>
-        <img src="/empresarios.jpeg" alt="" />
+        <img src="/verificacao.jpg" alt="" />
       </div>
     </div>
   );
