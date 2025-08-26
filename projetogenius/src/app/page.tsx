@@ -7,6 +7,7 @@ import { Introdutorio } from "./linksNavbar/introdução";
 import Softwares from "./linksNavbar/softwares";
 import { Sobre } from "./linksNavbar/sobre";
 import { InfiniteScrollHorizontal } from "./linksNavbar/InfinitScroll";
+import Comentarios from "./linksNavbar/comentarios";
 
 export default function Home() {
   const links = [
@@ -25,6 +26,7 @@ export default function Home() {
         <Sobre />
         <InfiniteScrollHorizontal />
         <Softwares />
+        <Comentarios/>
         <Contato />
         <WhatsAppButton />
       </main>

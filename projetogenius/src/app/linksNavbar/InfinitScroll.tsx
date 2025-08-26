@@ -1,13 +1,6 @@
 import "./InfinitScroll.css";
 import React from "react";
 
-// const img = [
-//   "/computadores.png",
-//   "/genius_comp.png",
-//   "/verificacao.jpg",
-//   "/empresarios.jpeg",
-// ];
-
 
 export function InfiniteScrollHorizontal() {
   return (

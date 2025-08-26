@@ -9,18 +9,14 @@ export function Card({ title, description, img }: cardPorps) {
     <div
       className="
         bg-[#314675] 
-        p-6 rounded-xl 
-        hover:shadow-md transition duration-300
+        p-6 
+        cursor-pointer
+            rounded-md hover:shadow-2xl hover:-translate-y-2 duration-600
         w-auto"
     >
       <div className="flex md:flex-row sm:flex-row  flex-col justify-center items-center">
-        
-          <img
-            src={img}
-            alt={title}
-            className="w-auto h-48 object-cover mb-4"
-          />
-        
+        <img src={img} alt={title} className="w-auto h-48 object-cover mb-4" />
+
         <div>
           <h3
             className="
