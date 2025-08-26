@@ -1,25 +1,3 @@
-// import Image from "next/image";
-// export function Introdutorio() {
-//   return (
-//     <div className="flex flex-col md:flex-row items-center justify-center p-8 lg:gap-30 xl:gap-35 text-white">
-//       <div className="p-4 rounded-sm w-full md:w-85 flex flex-col items-center">
-//         <Image
-//           src="/computadores.png"
-//           alt="varios computadores"
-//           width={500}
-//           height={500}
-//           className="w-full max-w-sm h-auto"
-//         />
-//       </div>
-//       <div>
-//         <p>
-//           Você esta procurando um sistema de gestão e automação comercial? Se
-//           sim, você esta no lugar certo.
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }
 
 import Image from "next/image";
 
