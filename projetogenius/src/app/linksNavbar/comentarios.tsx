@@ -1,52 +1,25 @@
-import "./InfinitScroll.css";
+import { CardComentario } from "../Componentes/Cards";
 
 export default function Comentarios() {
   return (
-    <div className=" text-black py-20">
-        <div className="text-white flex justify-center text-4xl mb-10"><h2>comentarios</h2></div>
-        <div className="container  w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {/* Card 1 */}
-            <div className=" bg-blue-200  border to-black p-5 cursor-pointer
-            rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                <div className="flex items-center gap-5">
-                    <p>Nayara Emilly</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sint blanditiis magnam ab fugiat commodi ducimus aliquam quisquam consectetur tenetur. Officiis voluptas omnis ipsa placeat repellat animi quasi qui harum!</p>
-                </div>
-            </div>
-            {/* Card 2 */}
-            <div className="bg-blue-200 border to-black p-5 cursor-pointer
-            rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                <div className="flex items-center gap-5">
-                    <p>Nayara Emilly</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sint blanditiis magnam ab fugiat commodi ducimus aliquam quisquam consectetur tenetur. Officiis voluptas omnis ipsa placeat repellat animi quasi qui harum!</p>
-                </div>
-            </div>
-            {/* Card 3 */}
-            <div className="bg-blue-200 border to-black p-5 cursor-pointer
-            rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                <div className="flex items-center gap-5">
-                    <p>Nayara Emilly</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sint blanditiis magnam ab fugiat commodi ducimus aliquam quisquam consectetur tenetur. Officiis voluptas omnis ipsa placeat repellat animi quasi qui harum!</p>
-                </div>
-            </div>
-            {/* Card 4 */}
-            <div className="bg-blue-200 border to-black p-5 cursor-pointer
-            rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
-                <div className="flex items-center gap-5">
-                    <p>Nayara Emilly</p>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam sint blanditiis magnam ab fugiat commodi ducimus aliquam quisquam consectetur tenetur. Officiis voluptas omnis ipsa placeat repellat animi quasi qui harum!</p>
-                </div>
-            </div>
-        </div>
-
+    <div className="bg-[#1a2d66]  text-white mt-30">
+      <div className="flex justify-center text-4xl ">
+        <h2>Comentarios sobre a Empresa</h2>
+      </div>
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <CardComentario
+          description="❝ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quis laudantium neque aliquam fugit quidem facere tenetur debitis sunt, accusamus nisi ea perspiciatis exercitationem autem odio eligendi sed. Sed, dolorem. ❞"
+          title="Nayara Emilly"
+        />
+        <CardComentario
+          description="❝ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quis laudantium neque aliquam fugit quidem facere tenetur debitis sunt, accusamus nisi ea perspiciatis exercitationem autem odio eligendi sed. Sed, dolorem. ❞"
+          title="Nayara Emilly"
+        />
+        <CardComentario
+          description="❝ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quis laudantium neque aliquam fugit quidem facere tenetur debitis sunt, accusamus nisi ea perspiciatis exercitationem autem odio eligendi sed. Sed, dolorem. ❞"
+          title="Nayara Emilly"
+        />
+      </div>
     </div>
   );
 }

@@ -34,7 +34,7 @@ img{
 }
 @keyframes infinite-scroll {
     to{
-        left: -8vw;
+        left: -20vw;
     }
 }
 

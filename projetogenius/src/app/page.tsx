@@ -21,7 +21,7 @@ export default function Home() {
     <div className="flex flex-col">
       <NavBar links={links} />
       {/* Conteúdo da página */}
-      <main className="flex-1 p-2 text-white">
+      <main className="">
         <Introdutorio />
         <Sobre />
         <InfiniteScrollHorizontal />
