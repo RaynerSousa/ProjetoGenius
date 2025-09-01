@@ -21,7 +21,7 @@ export function Rodaper() {
         {/* DIV DA DIRETA */}
         <div className="space-y-4  mb-5 lg:p-10">
           <h3>Formas de falar com a empressa:</h3>
-          <p>
+          <p className="animate-bounce">
             WhatsApp:{" "}
             <a
               href="https://wa.me/558896178334"
