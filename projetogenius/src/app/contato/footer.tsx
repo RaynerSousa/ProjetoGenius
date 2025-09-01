@@ -21,7 +21,7 @@ export function Rodaper() {
         {/* DIV DA DIRETA */}
         <div className="space-y-4  mb-5 lg:p-10">
           <h3>Formas de falar com a empressa:</h3>
-          <p className="animate-bounce">
+          <p>
             WhatsApp:{" "}
             <a
               href="https://wa.me/558896178334"
@@ -65,7 +65,7 @@ export function WhatsAppButton() {
       href="https://wa.me/558896178334"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center justify-center"
+      className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center justify-center animate-bounce"
       aria-label="Contato via WhatsApp"
     >
       {/* Ícone WhatsApp SVG */}
