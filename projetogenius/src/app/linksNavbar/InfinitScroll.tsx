@@ -4,7 +4,7 @@ import React from "react";
 
 export function InfiniteScrollHorizontal() {
   return (
-    <div className="wrapper">
+    <div className="wrapper mt-16">
       <div className="img-item" style={{ "--i": 1 } as React.CSSProperties}>
         <img src="/verificacao.jpg" alt="" />
       </div>

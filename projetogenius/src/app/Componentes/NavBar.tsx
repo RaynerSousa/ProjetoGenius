@@ -23,7 +23,7 @@ export default function NavBar({ links }: NavBarProps) {
               <a
                 key={indice}
                 href={link.href}
-                className="md:m-10 sm:m-7 m-2 hover:text-indigo-600"
+                className="md:m-10 m-2 hover:text-indigo-600"
               >
                 {link.label}
               </a>

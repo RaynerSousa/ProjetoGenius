@@ -27,6 +27,7 @@ export default function Home() {
         <InfiniteScrollHorizontal />
         <Softwares />
         <Comentarios/>
+        <div></div>
         <Contato />
         <WhatsAppButton />
       </main>

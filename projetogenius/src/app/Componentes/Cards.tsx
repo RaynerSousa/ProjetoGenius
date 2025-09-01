@@ -48,8 +48,7 @@ export function CardComentario({ title, description }: cardPorp) {
   return (
     <div
       className=" bg-[#041548]  border to-black p-5 cursor-pointer
-            rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-3
-            sm:m-4 md:m-4 lg:m-4 "
+            rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-3 m-5 "
     >
         <div>
         <p>{description}</p>
