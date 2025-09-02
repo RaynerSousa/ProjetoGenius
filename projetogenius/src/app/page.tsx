@@ -21,13 +21,12 @@ export default function Home() {
     <div className="flex flex-col">
       <NavBar links={links} />
       {/* Conteúdo da página */}
-      <main className="">
+      <main className="overflow-hidden">
         <Introdutorio />
         <Sobre />
         <InfiniteScrollHorizontal />
         <Softwares />
         <Comentarios/>
-        <div></div>
         <Contato />
         <WhatsAppButton />
       </main>

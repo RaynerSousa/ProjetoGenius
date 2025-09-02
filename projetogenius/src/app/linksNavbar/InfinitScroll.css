@@ -24,7 +24,7 @@
 .img-item{
     position: absolute;
     height: inherit;
-    width: 20vw;
+    width: 25vw;
     left: 100%;
     animation: infinite-scroll var(--duration) infinite linear;
     animation-delay: calc(var(--duration)/var(--totalitens) * (var(--totalitens ) - var(--i))* -1);
