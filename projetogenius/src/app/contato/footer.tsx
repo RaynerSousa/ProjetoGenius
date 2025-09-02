@@ -65,15 +65,15 @@ export function WhatsAppButton() {
   href="https://wa.me/558896178334"
   target="_blank"
   rel="noopener noreferrer"
-  className="fixed bottom-1 right-1 overflow-hidden p-5 flex flex-col group"
+  className="fixed bottom-1 right-1 p-5 flex flex-col group"
   aria-label="Contato via WhatsApp"
 >
   {/* Balão de fala com texto */}
   <div className="mb-2 px-3 py-1 text-xl bg-white text-gray-800 rounded-xl shadow-lg relative whitespace-nowrap animate-bounce">
-    Vamos conversar <br /> um pouco?
+    Vamos <br /> conversar <br /> um pouco?
 
     {/* Triângulo do balão */}
-    <div className="absolute -bottom-1 left-38 -translate-x-1/2 w-2 h-2 bg-white rotate-45 shadow-sm"></div>
+    <div className="absolute -bottom-1 left-23 -translate-x-1/2 w-2 h-2 bg-white rotate-45 shadow-sm"></div>
   </div>
 
   {/* Botão do WhatsApp */}
