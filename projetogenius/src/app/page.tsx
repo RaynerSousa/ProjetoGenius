@@ -2,7 +2,7 @@ import Image from "next/image";
 import NavBar from "./Componentes/NavBar";
 import Contato from "./linksNavbar/Contato";
 import { Rodaper } from "./contato/footer";
-import { WhatsAppButton } from "./contato/footer";
+// import { WhatsAppButton } from "./contato/footer";
 import { Introdutorio } from "./linksNavbar/introdução";
 import Softwares from "./linksNavbar/softwares";
 import { Sobre } from "./linksNavbar/sobre";
@@ -28,7 +28,7 @@ export default function Home() {
         <Softwares />
         <Comentarios/>
         <Contato />
-        <WhatsAppButton />
+        {/* <WhatsAppButton /> */}
       </main>
       <footer className="text-left">
         <Rodaper />
