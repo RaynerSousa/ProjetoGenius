@@ -8,6 +8,25 @@ gsap.registerPlugin(ScrollTrigger)
 
 export function Sobre() {
 
+//   useLayoutEffect(() => {
+//   const ctx = gsap.context(() => {
+//     gsap.from(".empresario", {
+//       x: -80,              // Começa fora da tela à esquerda
+//       opacity: 0,          // Começa invisível
+//       duration: 3,
+//       scrollTrigger: {
+//         trigger: ".empresario",
+//         // markers: true,
+//         start: "top 80%",
+//         end: "bottom 30%",
+//       },
+//     });
+//   });
+
+//   return () => ctx.revert();
+// }, []);
+
+
   useLayoutEffect (()=> {
     gsap.to(".empresario",{
       x: 0,
@@ -16,12 +35,15 @@ export function Sobre() {
       // start: "top 90%",
       scrollTrigger:{
         trigger:".empresario",
-        markers: true,
-        start: "top: 200px",
-        end: "button: 300px"
+        // markers: true,
+        // start: "top: 200px",
+        // end: "button:300px"
       }
-
     })
+
+    return( )=> {
+      gsap.killTweensOf(".empresario")
+    }
   },[])
 
   return (
