@@ -12,7 +12,7 @@ export function Introdutorio() {
     gsap.to(".compu", {
       x: 0,
       opacity: 1,
-      duration: 0.09
+      duration: 0.07
       // scrollTrigger: {
       //   trigger: ".compu",
       //   markers: true,
