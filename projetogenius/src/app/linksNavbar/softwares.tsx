@@ -12,25 +12,25 @@ export default function Softwares() {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      tl.current = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".modal-itens", // ✅ seletor correto
-          scrub: true,
-          // markers: true,
-          start: "top 80%", // começa a animar quando entra na tela
-          end: "bottom 85%",
-        },
-      });
-
-      tl.current.from(".modal-itens", {
-        opacity: 0,
-        y: 100,
-        stagger: 0.4, // anima cada item com delay
-        duration: 1.5,
-      });
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".modal-itens",
+            scrub: true,
+            // markers: true,
+            start: "top 80%",
+            end: "bottom 75%",
+          },
+        })
+        .from(".modal-itens", {
+          opacity: 0,
+          y: 100,
+          stagger: 0.4,
+          duration: 1.2,
+        });
     }, el);
 
-    return () => ctx.revert(); // ✅ desmonta certinho
+    return () => ctx.revert();
   }, []);
 
   return (
