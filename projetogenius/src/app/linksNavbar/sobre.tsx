@@ -1,64 +1,40 @@
 "use client";
-import { useLayoutEffect,} from "react";
+import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 export function Sobre() {
-
-//   useLayoutEffect(() => {
-//   const ctx = gsap.context(() => {
-//     gsap.from(".empresario", {
-//       x: -80,              // Começa fora da tela à esquerda
-//       opacity: 0,          // Começa invisível
-//       duration: 3,
-//       scrollTrigger: {
-//         trigger: ".empresario",
-//         // markers: true,
-//         start: "top 80%",
-//         end: "bottom 30%",
-//       },
-//     });
-//   });
-
-//   return () => ctx.revert();
-// }, []);
-
-
-  useLayoutEffect (()=> {
-    gsap.to(".empresario",{
+  useLayoutEffect(() => {
+    gsap.to(".empresario", {
       x: 0,
       opacity: 1,
-      duration: 3,
-      // start: "top 90%",
-      scrollTrigger:{
-        trigger:".empresario",
+      scrollTrigger: {
+        trigger: ".empresario",
         // markers: true,
-        // start: "top: 200px",
-        // end: "button:300px"
-      }
-    })
-
-    return( )=> {
+        start: "top 80%",
+        end: "bottom 80%",
+        scrub: true
+      },
+    });
+    return()=>{
       gsap.killTweensOf(".empresario")
     }
-  },[])
+  }, []);
 
   return (
-    <div className="md:pt-6 sm:pt-20" id="sobre">
-      <div className="flex xl:flex-row-reverse md:flex-row-reverse flex-col-reverse justify-center lg:gap-10 xl:gap-16 text-white mt-20 lg:m-25 md:m-12 sm:m-7">
+    <div className="w-screen h-screen scroll-mt-20" id="sobre">
+      <div className="flex xl:flex-row-reverse md:flex-row-reverse flex-col-reverse justify-center lg:gap-10 xl:gap-16 text-white md:m-12 sm:m-7">
         {/* TEXTO */}
         <div className=" md:translate-x-40 md:w-1/2 m-4">
           <h2 className="text-3xl">Sobre nós</h2>
-          <p>
-            Somos uma empresa com mais de 5 anos no mercado da tecnologia.
-          </p>
+          <p>Somos uma empresa com mais de 5 anos no mercado da tecnologia.</p>
         </div>
 
         {/* IMAGEM */}
-        <div className="empresario opacity-0 -translate-x-20 flex justify-center ">
+        <div className="empresario opacity-0 -translate-x-45 flex justify-center ">
           <Image
             src="/empresarios.jpeg"
             alt="Empresarios"
@@ -70,4 +46,4 @@ export function Sobre() {
       </div>
     </div>
   );
-} 
+}

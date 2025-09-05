@@ -5,9 +5,10 @@ interface cardPorps {
   description: string;
   img?: string;
   link?: string;
+  className?: Text
 }
 
-export function Card({ title, description, img, link }: cardPorps) {
+export function Card({ title, description, img, link,className }: cardPorps) {
   return (
     <div className="
         bg-[#314675] 

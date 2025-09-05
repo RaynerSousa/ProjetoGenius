@@ -8,7 +8,7 @@ interface NavBarProps {
 
 export default function NavBar({ links }: NavBarProps) {
   return (
-    <nav className="fixed w-full bg-amber-50 shadow-sm z-50">
+    <nav className="fixed w-full bg-amber-50 shadow-sm  z-50">
       <div>
         <div className="flex sm:justify-between justify-center h-16 items-center">
           {/* Logo */}

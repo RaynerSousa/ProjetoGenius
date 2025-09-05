@@ -9,50 +9,51 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 export function Introdutorio() {
   useLayoutEffect(() => {
-    // Animação da imagem
     gsap.to(".compu", {
       x: 0,
       opacity: 1,
-      duration: 2,
-      scrollTrigger: {
-        trigger: ".compu",
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      },
+      duration: 0.09
+      // scrollTrigger: {
+      //   trigger: ".compu",
+      //   markers: true,
+      //   start: "top 10%",
+      //   end: "buttom 20%",
+      //   scrub: true,
+      // },
     });
 
-    const split = new SplitText(".text", { type: "words,chars" });
+    return () => {
+      gsap.killTweensOf(".compu");
+    };
+  }, []);
 
+  
+
+  useLayoutEffect(() => {
+    const split = new SplitText(".text", { type: "words,chars" });
     gsap.from(split.chars, {
-      x: 100,
+      y: 100,
       autoAlpha: 0,
       stagger: 0.08,
-      // scrollTrigger: {
-      //   trigger: ".texto",
-      //   markers: true,
-      //   start: "top: 350px",
-      //   end: "button: 170px",
-      //   scrub: true
-      // },
     });
   }, []);
 
   return (
-    <div className="container pt-40 pb-20" id="inicio">
-      <section className="">
+    <div className="h-screen pt-20 " id="inicio">
         <div className="texto flex xl:flex-row-reverse md:flex-row-reverse sm:flex-col flex-col justify-center lg:gap-10 xl:gap-16 text-white mt-20 lg:m-25 md:m-12 sm:m-7">
           {/* IMAGEM */}
-          <div className="compu opacity-0 translate-x-20 flex justify-center max-w-sm mx-auto ">
+          <div className="compu opacity-0 translate-x-20  flex justify-center">
             <Image
               src="/computadores.png"
               alt="vários computadores"
-              width={700}
-              height={700}
+              width={500}
+              height={400}
+              className="w-screen max-w-sm h-screen "
             />
           </div>
 
           {/* TEXTO */}
-          <div className="w-full md:w-1/2 m-4 ">
+          <div className="w-full md:w-1/2 m-4">
             <p className="text-4xl text">
               Você está procurando um sistema de gestão e automação comercial?
             </p>
@@ -61,7 +62,6 @@ export function Introdutorio() {
             </p>
           </div>
         </div>
-      </section>
     </div>
   );
 }
