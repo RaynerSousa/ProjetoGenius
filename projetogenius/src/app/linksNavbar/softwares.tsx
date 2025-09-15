@@ -35,7 +35,7 @@ export default function Softwares() {
 
   return (
     <div className="mt-30 w-full text-white scroll-mt-20" id="Softwares">
-      <div className="flex justify-center text-4xl m-4 pt-10">
+      <div className="flex justify-center font-bold text-4xl m-4 pt-10">
         <h2>Sistema que Disponibiliza</h2>
       </div>
       <div
