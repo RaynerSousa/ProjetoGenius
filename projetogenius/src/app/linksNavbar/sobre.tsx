@@ -25,7 +25,7 @@ export function Sobre() {
   }, []);
 
   return (
-    <div className="w-screen h-screen scroll-mt-20" id="sobre">
+    <div className="w-screen -mb-35 h-screen scroll-mt-50" id="sobre">
       <div className="flex xl:flex-row-reverse md:flex-row-reverse flex-col-reverse justify-center lg:gap-10 xl:gap-16 text-white md:m-12 sm:m-7">
         {/* TEXTO */}
         <div className=" md:translate-x-40 md:w-1/2 m-4">
@@ -34,7 +34,7 @@ export function Sobre() {
         </div>
 
         {/* IMAGEM */}
-        <div className="empresario opacity-0 -translate-x-45 flex justify-center ">
+        <div className="empresario opacity-0 -translate-x-45 flex justify-center items-center ">
           <Image
             src="/empresarios.jpeg"
             alt="Empresarios"

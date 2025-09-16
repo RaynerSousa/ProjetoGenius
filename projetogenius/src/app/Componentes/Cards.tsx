@@ -47,7 +47,7 @@ export function CardComentario({ title, description }: cardPorp) {
   return (
     <div
       className=" bg-[#041548]  border to-black p-5 cursor-pointer
-            rounded-md m-5 "
+            rounded-md m-5 h-45"
     >
       <div>
         <p className="italic text-lg leading-relaxed">{description}</p>

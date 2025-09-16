@@ -18,8 +18,8 @@ export default function Softwares() {
             trigger: ".modal-itens",
             scrub: true,
             // markers: true,
-            start: "top 80%",
-            end: "bottom 75%",
+            start: "top 100%",
+            end: "bottom 100%",
           },
         })
         .from(".modal-itens", {
@@ -34,15 +34,15 @@ export default function Softwares() {
   }, []);
 
   return (
-    <div className="mt-30 w-full text-white scroll-mt-20" id="Softwares">
-      <div className="flex justify-center font-bold text-4xl m-4 pt-10">
+    <div className="mt-30 w-screen h-screen grid justify-center items-center text-white modal-itens" id="Softwares">
+      <div className="font-bold text-4xl m-4 grid justify-center">
         <h2>Sistema que Disponibiliza</h2>
       </div>
       <div
-        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        className="w-full -mt-60 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
         ref={el} // ✅ referência aqui
       >
-        <div className="modal-itens" id="modal1">
+        <div id="modal1">
           <Card
             title="Genius"
             description="É um sistema que ajuda a automatizar comércios"
