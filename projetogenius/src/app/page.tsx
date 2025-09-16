@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import NavBar from "./Componentes/NavBar";
 import Contato from "./linksNavbar/Contato";
 import { Rodaper } from "./contato/footer";
