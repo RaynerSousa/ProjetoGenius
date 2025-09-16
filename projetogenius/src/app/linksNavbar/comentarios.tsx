@@ -2,7 +2,7 @@ import { CardComentario } from "../Componentes/Cards";
 
 export default function Comentarios() {
   return (
-    <div className="bg-[#1a2d66] text-white mt-24">
+    <div className="bg-[#1a2d66] h-full text-white mt-24">
       <div className="flex justify-center font-bold text-4xl m-4">
         <h2>Comentarios sobre a Empresa</h2>
       </div>

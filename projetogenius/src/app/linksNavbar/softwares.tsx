@@ -35,12 +35,12 @@ export default function Softwares() {
 
   return (
     <div className="mt-30 w-screen h-screen grid justify-center items-center text-white modal-itens" id="Softwares">
-      <div className="font-bold text-4xl m-4 grid justify-center">
-        <h2>Sistema que Disponibiliza</h2>
-      </div>
+        {/* <div className="font-bold text-4xl m-4 grid justify-center"> */}
+        <h2 className="font-bold text-4xl grid justify-center">Sistema que Disponibiliza</h2>
+      {/* </div> */}
       <div
-        className="w-full -mt-60 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-        ref={el} // ✅ referência aqui
+        className="w-full md:-mt-60 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        ref={el}
       >
         <div id="modal1">
           <Card

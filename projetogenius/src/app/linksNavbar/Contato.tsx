@@ -54,7 +54,7 @@ export default function Contato() {
           <p>Clique na logo do WhatsApp</p>
         </div> */}
         <div className=" text-white shadow-lg flex flex-row-reverse">
-          <div className="bg-indigo-600 hover:bg-indigo-700 rounded-4xl w-50 h-40 flex items-center justify-center flex-col">
+          <div className="bg-[#013585] hover:bg-indigo-700 rounded-4xl w-50 h-40 flex items-center justify-center flex-col">
             {/* Ícone WhatsApp SVG */}
             <p className="pb-4">Click me!</p>
             <svg
