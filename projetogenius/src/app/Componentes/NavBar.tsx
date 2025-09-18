@@ -8,9 +8,9 @@ interface NavBarProps {
 
 export default function NavBar({ links }: NavBarProps) {
   return (
-    <nav className="fixed w-full bg-amber-50 shadow-sm  z-50">
+    <nav className="fixed w-full bg-amber-40/100 backdrop-blur-sm shadow-sm text-white z-50">
       <div>
-        <div className="flex sm:justify-between justify-center h-16 items-center">
+        <div className="flex ml-10 sm:justify-between justify-center h-16 items-center">
           {/* Logo */}
           <div className="flex  items-center">
             <Image src="/genius.png" alt="logo genius" width={70} height={50} />
