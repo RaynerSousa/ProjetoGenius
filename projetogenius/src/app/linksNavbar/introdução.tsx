@@ -34,7 +34,7 @@ export function Introdutorio() {
   }, []);
 
   return (
-    <div className="h-screen pt-40 " id="inicio">
+    <div className="w-screen scroll-mt-60 mt-50 md:h-screen " id="inicio">
       <div className="texto flex xl:flex-row-reverse md:flex-row-reverse sm:flex-col flex-col justify-center lg:gap-10 xl:gap-16 text-white mt-20 lg:m-25 md:m-12 sm:m-7">
         {/* IMAGEM */}
         <div className="compu opacity-0 translate-x-20  flex justify-center">

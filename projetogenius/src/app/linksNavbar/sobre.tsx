@@ -19,13 +19,13 @@ export function Sobre() {
         scrub: true
       },
     });
-    return()=>{
+    return()=>{ 
       gsap.killTweensOf(".empresario")
     }
   }, []);
 
   return (
-    <div className="w-screen -mb-35 h-screen scroll-mt-50" id="sobre">
+    <div className="w-screen scroll-mt-20 md:h-screen" id="sobre">
       <div className="flex xl:flex-row-reverse md:flex-row-reverse flex-col-reverse justify-center lg:gap-10 xl:gap-16 text-white md:m-12 sm:m-7">
         {/* TEXTO */}
         <div className=" md:translate-x-40 md:w-1/2 m-4">
